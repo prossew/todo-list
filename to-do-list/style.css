@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #f5f5f5;
+    --text-color: #000;
+    --task-bg: #f5f5f5;
+    --input-bg: black;
+    --input-text: white;
+    --accent: pink;
+}
+
+ [data-theme='dark'] {
+    --bg-color: #121212;
+    --text-color: #f0f0f0;
+    --task-bg: #121212;
+    --input-bg: #2d2d2d;
+    --input-text: #f0f0f0;
+    --accent: #ff6b8b;
+ }
+
+body {
+   background-color: var(--bg-color);
+   color: var(--text-color);
+   transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+font-size: 150px;
+line-height: 1.6;
+display: flex;
+margin-top: 100px;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+}
+
+.main__task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+.main__task input {
+    padding: 20px 25px;
+    width: 700px;
+    border-radius: 30px;
+    border: none;
+    background-color: black;
+    color: white;
+    transition: all 0.9s ease;
+    outline: none;
+    font-size: 20px;
+    background-color: var(--input-bg);
+    color: var(--input-text);
+
+}
+
+.add-button {
+    position: relative;
+    right: 65px;
+    width: 100px;
+    height: 64px;
+    border-radius: 0 40px 40px 0;
+    background: pink;
+    border: none;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.add-button:hover {
+background-color: white;
+transition: all 0.9s ease;
+}
+
+h1:hover {
+color: #e6b9b9;
+transition: 1.0s ease-in;
+}
+
+.task-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--task-bg);
+}
+
+.task-checkbox{
+width: 20px;
+height: 20px;
+cursor: pointer;
+accent-color: rgb(88, 207, 88);
+margin-right: 15px;
+}
+
+.task-text {
+    font-size: 40px;
+    color: rgb(255, 148, 166);
+    font-family: 'Roboto', sans-serif;
+}
+
+.delete-btn {
+    margin-left: 15px;
+    background-color: rgb(250, 52, 52);
+    color: #f5f5f5;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: none;
+    font-size: 15px;
+}
+
+.delete-btn:hover {
+background-color: pink;
+transition: 0.5s ease;
+}
+
+footer {
+    display: flex;
+    justify-content: right;
+    margin-right: 100px;
+
+}
+.theme-btn {
+text-align: center;
+width: 90px;
+border-radius: 30px;
+height: 50px;
+color: rgb(20, 18, 18);
+background-color: pink;
+border: none;
+font-size: 15px;
+font-family: 'Roboto',sans-serif;
+}
+
+.theme-btn:hover {
+background-color: black;
+transition: 0.9s ease;
+color: white;
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 120px;
+        margin-top: 70px;
+    }
+    .main__task input {
+        width: 600px;
+    }
+    .task-text {
+        font-size: 30px;
+    }
+    .theme-btn {
+     width: 50px;
+     height: 50px;
+     margin-top: 30px;
+     
+    }
+}
+
+@media (max-width: 820px) {
+    .task-text {
+        font-size: 20px;
+    }
+    .add-button {
+        height: 66px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 90px;
+    } 
+    .main__task input {
+    width: 500px;
+    }
+    .task-text {
+     font-size: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 60px;
+        margin-top: 40px;
+    }
+    
+    .main__task {
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .main__task input {
+        width: 90vw;
+        padding: 16px 20px;
+        border-radius: 25px;
+        font-size: 16px;
+    }
+    
+    .add-button {
+        position: static; 
+        right: auto;
+        width: 90vw;
+        max-width: 200px;
+        height: 54px;
+        border-radius: 25px;
+        font-size: 17px;
+        margin-top: 10px;
+    }
+    
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 15px;
+        margin-bottom: 12px;
+    }
+    
+    .task-checkbox {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .delete-btn {
+        align-self: flex-end;
+        padding: 8px 18px;
+        font-size: 15px;
+    }
+    
+    .theme-btn {
+        top: 15px;
+        right: 15px;
+        padding: 7px 14px;
+        font-size: 13px;
+    }
+
+    @media (max-width: 360px) {
+    h1 {
+        font-size: 50px;
+    }
+    
+    .main__task input {
+        padding: 14px 18px;
+        font-size: 15px;
+    }
+    
+    .add-button {
+        height: 50px;
+        font-size: 16px;
+    }
+     
+    .theme-btn {
+    padding: 7px 14px;
+    font-size: 10px;
+    text-align: center;
+    
+    }
+}
+}
