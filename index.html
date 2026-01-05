@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <header>
+        <div class="header__title">
+        <h1>Just do it</h1>
+        </div>
+        <div class="main__background">
+            <img src="/img/background.jpg" alt="Задний фон">   
+        </div>
+    </header>
+    <main>
+        <div class="main__task">
+            <form action="" id="taskForm">
+                <div class="input-group">
+                    <label for="taskInput">
+                    <input type="text"
+                           id="taskInput"
+                           required
+                           name="task"
+                           maxlength="50"
+                           placeholder="Add a task">
+                           </label>
+                    <button id="addBtn" class="add-button" type="submit">I'll do it</button>
+                </div>
+            </form>
+        </div>
+        <div class="task__container" id="taskContainer">
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
