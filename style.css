@@ -75,3 +75,12 @@ color: #D1A28B;
     border: none;
     margin-left: 10px;
 }
+
+.task__container input {
+margin-right: 15px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
