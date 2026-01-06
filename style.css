@@ -73,7 +73,7 @@ color: #D1A28B;
     padding: 5px 8px;
     border-radius: 30px;
     border: none;
-    margin-left: 10px;
+  
 }
 
 .task__container input {
@@ -84,3 +84,37 @@ margin-right: 15px;
   text-decoration: line-through;
   color: gray;
 }
+
+.filterContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+
+.active  {
+    padding: 5px 8px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+
+.completedTask{
+    padding: 5px 8px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.all{
+    padding: 5px 8px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+

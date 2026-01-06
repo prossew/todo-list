@@ -4,6 +4,7 @@ const taskForm = document.getElementById("taskForm");
 const taskInput = document.getElementById("taskInput");
 const addBtn = document.getElementById("addBtn");
 const taskContainer = document.getElementById("taskContainer");
+const filterContainer = document.getElementById("filterContainer");
 
 addBtn.addEventListener('click', function(e){
  
@@ -40,10 +41,31 @@ addBtn.addEventListener('click', function(e){
       if(this.checked) {
       newDiv.children[1].classList.add('completed')
       } else {
-    newDiv.children[1].classList.remove('completed')
+      newDiv.children[1].classList.remove('completed')
       }
     })
-   
-       
+
+ 
 
 })
+
+   const activeTask = document.createElement("button")
+    activeTask.textContent = "Активные"
+    activeTask.classList.add('active')
+    filterContainer.appendChild(activeTask)
+
+    const allTask = document.createElement("button")
+    allTask.textContent = "Все задачи"
+    allTask.classList.add('all')
+    filterContainer.appendChild(allTask)
+
+    const completedTask = document.createElement("button")
+    completedTask.textContent = "Выполненые"   
+    completedTask.classList.add('completedTask')
+    filterContainer.appendChild(completedTask)
+       
+
+    activeTask.addEventListener('click', function(){
+   
+     
+    })
