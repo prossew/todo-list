@@ -66,6 +66,11 @@ addBtn.addEventListener('click', function(e){
        
 
     activeTask.addEventListener('click', function(){
+  
+    const queryTask = taskContainer.querySelectorAll('span')
+    for(i = 0; i < queryTask.length; i++) {
+       const taskDiv = queryTask[i].parentElement
+    }
    
-     
+
     })
