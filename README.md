@@ -15,6 +15,9 @@ A simple and intuitive task management app built with pure JavaScript. Add, filt
 - **CSS3**
 - **JavaScript (Vanilla JS)**
 
+## 🌐 Demo
+- https://prossew.github.io/todo-list/
+
 ## 🚀 Getting Started
 1.  Clone the repository:
     ```bash
